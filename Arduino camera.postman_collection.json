@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "eb359cb0-a7aa-4306-85e8-e45e30806547",
+		"name": "Arduino camera",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25752137"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Berkay\",\r\n    \"email\":\"bb\",\r\n    \"mobileNumber\":\"05533523212\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/images/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/bbari/OneDrive/Desktop/Gereksiz/fotograf.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/images/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"images",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/images/13",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/images/13",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"images",
+						"13"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
