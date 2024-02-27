@@ -1,6 +1,11 @@
-# HomeGuard: Smart Home Security System
+# HomeGuard: Smart Home Security System 
 
-HomeGuard is a comprehensive smart security system designed for homes, integrating ESP32-CAM and Spring Boot for enhanced safety through live image surveillance and motion detection. This project aims to provide homeowners with a reliable, expandable security system that can monitor various environmental and security threats.
+HomeGuard is a comprehensive smart security system designed for homes, integrating ESP32-CAM and Spring Boot for enhanced safety through live image surveillance and motion detection. This project aims to provide homeowners with a reliable, expandable security system that can monitor various environmental and security threats. 
+
+<p align="center">
+  <img src="images_for_Readme/Homeguard_Logo.png" alt="ESP 32 Arduino" width="125">
+</p>
+
 
 ## Features
 
