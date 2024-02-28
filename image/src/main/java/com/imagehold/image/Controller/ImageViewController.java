@@ -1,5 +1,7 @@
-package com.imagehold.image;
+package com.imagehold.image.Controller;
 
+import com.imagehold.image.Entity.Image;
+import com.imagehold.image.Repository.ImageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ByteArrayResource;

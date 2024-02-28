@@ -1,6 +1,8 @@
-package com.imagehold.image;
+package com.imagehold.image.Entity;
 
 import jakarta.persistence.*;
+
+import java.time.LocalDateTime;
 
 @Entity
 public class Image {
@@ -12,6 +14,9 @@ public class Image {
 
     @Lob
     private byte[] data;
+
+    private LocalDateTime createdAt;
+
 
     public Image() {
     }
@@ -41,4 +46,14 @@ public class Image {
     public void setData(byte[] data) {
         this.data = data;
     }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
+
+
 }

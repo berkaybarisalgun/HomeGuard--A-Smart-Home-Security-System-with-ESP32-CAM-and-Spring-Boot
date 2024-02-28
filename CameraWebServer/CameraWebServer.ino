@@ -1,7 +1,7 @@
 #include "CameraManager.h"
 #include "ConnectivityManager.h"
 #include "MotionSensorManager.h"
-#include "UltrasonicSensorManager.h" // Include UltrasonicSensorManager class
+#include "UltrasonicSensorManager.h"
 
 // The specified connection information, motion sensor pin, and ultrasonic sensor pins
 const char* ssid = "yourSSID";
