@@ -1,12 +1,12 @@
 #include "CameraManager.h"
 #include "ConnectivityManager.h"
 #include "MotionSensorManager.h"
-#include "UltrasonicSensorManager.h"
+#include "UltrasonicSensorManager.h" // Include UltrasonicSensorManager class
 
 // The specified connection information, motion sensor pin, and ultrasonic sensor pins
-const char* ssid = "yourSSID";
+const char* ssid = "yourssid";
 const char* password = "yourpassword";
-const char* serverUrl = "http://192.168.1.109:8080/api/images/";
+const char* serverUrl = "http://192.168.1.8:8080/api/images/";
 const int motionSensorPin = 15; // Motion sensor pin number
 const int trigPin = 13; // Ultrasonic sensor Trig pin number (Update the pin numbers)
 const int echoPin = 14; // Ultrasonic sensor Echo pin number (Update the pin numbers)

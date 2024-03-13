@@ -22,6 +22,7 @@ void ConnectivityManager::sendPhoto(camera_fb_t* fb) {
   http.addHeader("Content-Type", "image/jpeg");
 
   int httpResponseCode = http.POST(fb->buf, fb->len);
+  Serial.print(httpResponseCode);
   if (httpResponseCode > 0) {
     Serial.println("Photo sent successfully");
   } else {
