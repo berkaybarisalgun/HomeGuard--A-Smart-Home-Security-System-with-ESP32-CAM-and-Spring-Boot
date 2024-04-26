@@ -87,6 +87,13 @@ To ensure your ESP32-CAM successfully communicates with your Spring Boot applica
 2. Type `ipconfig` and press Enter.
 3. Look for the "IPv4 Address" under your active network connection. This is your local IP address.
 
+### Finding Your IP Address on Mac
+
+1. Open the terminal. You can find Terminal in the Applications folder under Utilities, or you can search for it using Spotlight.
+2. In the Terminal, type the following command and press Enter: ifconfig
+3. Search for the "inet" address listed under your active network connection. It will appear under `en0` if you're using Wi-Fi, or `en1` if you're using an Ethernet cable. This "inet" address is your local IP address.
+
+
 ### Updating serverUrl in ESP32-CAM
 
 1. In the provided Arduino sketch for the ESP32-CAM, locate the `serverUrl` variable.
