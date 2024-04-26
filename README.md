@@ -118,3 +118,4 @@ This project was inspired by and built upon the knowledge from the following tut
 - [ESP32-CAM Access Point (AP) for Web Server](https://randomnerdtutorials.com/esp32-cam-access-point-ap-web-server/)
 - [AutoConnect Library for ESP32-CAM](https://hieromon.github.io/AutoConnect/esp32cam.html)
 - [Error Codes Reference](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/error-codes.html)
+- [Enhanced feautres of ESP32-CAM](https://docs.micropython.org/en/latest/esp32/quickref.html)
