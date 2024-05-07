@@ -103,6 +103,37 @@ const char* serverUrl = "http://192.168.x.x:8080/endpoint";
 
 3. Upload the updated sketch to your ESP32-CAM module.
 
+## Common Errors and Troubleshooting
+
+If you're using HomeGuard, you might run into some issues. Here are some steps to fix a common error:
+
+### Error Code [90149-224]
+**Error Message:** "Database “/Users/<yourusername>/test” not found, either pre-create it or allow remote database creation (not recommended in secure environments) [90149-224]"
+
+![image](https://github.com/berkaybarisalgun/HomeGuard--A-Smart-Home-Security-System-with-ESP32-CAM-and-Spring-Boot/assets/76767449/0119f7f8-53bf-448b-9eb7-839f416e2e50)
+
+
+This error happens when the H2 database can't find the needed database file when starting. Here’s how to fix it:
+
+1. **Find Your Username:**
+   - Open Command Prompt (cmd) on Windows or Terminal on Mac.
+   - Type `whoami` and press Enter.
+   - Write down the username that shows up. This is your system username.
+
+2. **Check for the Database File:**
+   - Go to your user directory by typing `ls /Users/<yourusername>/` in Terminal or Command Prompt.
+   - Look for a file named `test.mv.db`. If this file is missing, you need to create it.
+
+3. **Create the Database File:**
+   - In Terminal or Command Prompt, type:
+     ```bash
+     touch /Users/<yourusername>/test.mv.db
+     ```
+   - This command makes an empty file named `test.mv.db` that the H2 database can use.
+
+Following these steps should help you solve the database not found error and keep using HomeGuard smoothly.
+
+
 ## Upcoming Features
 
 I plan to enhance HomeGuard by integrating a React frontend for easier interaction and adding more sensors for a thorough home protection system.
